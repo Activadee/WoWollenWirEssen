@@ -101,11 +101,11 @@ class Filter
         if ($filter->getKat() == 1) {
             $varKat = ">=";
         }
-        if ($filter->getEntf() == 1) {
-            $varEnt = ">=";
+        if ($filter->getEntf() == 3 || $filter->getEntf() == 2) {
+            $varEnt = "<=";
         }
-        if ($filter->getPreis() == 1) {
-            $varPreis = ">=";
+        if ($filter->getPreis() == 3 ||$filter->getPreis() == 2 ) {
+            $varPreis = "<=";
         }
         if ($filter->getVeggie() == 1) {
             $varVeg = ">=";
