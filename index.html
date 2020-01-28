@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Wo / Was essen wir denn heute?</title>
+</head>
+<body>
+<h2 class="ueberschrift"> Wo / was essen wir denn heute?</h2>
+<span class="headfilt">Kategorien - FILTER </span>
+<form method="post">
+<div class="filter">
+
+    <button class="btn">
+        <input class="kategorie" type="hidden" hidden value="1"> Alles
+    </button>
+    <button class="btn">
+        <input class="kategorie" type="hidden" hidden value="2">Burger
+
+    </button>
+    <button class="btn">
+
+        <input class="kategorie" type="hidden" hidden value="3">
+        Pizza/Pasta
+
+    </button>
+    <button class="btn">
+
+        <input class="kategorie" type="hidden" hidden value="4">Asiatisch
+    </button>
+    <button class="btn">
+
+        <input class="kategorie" type="hidden" hidden value="5">
+         Hausmannskost
+
+    </button>
+    <button class="btn">
+
+        <input class="kategorie" type="hidden" hidden value="6">
+        Sonstiges
+
+    </button>
+</div>
+<div class="cont">
+    <span class="headfilt">Entfernung </span> <span> Preis</span>
+</div>
+<div class="filter">
+    <button class="btn">
+
+            <input class="entfernung" type="hidden" hidden value="1">
+            Egal
+
+    </button>
+    <button class="btn">
+
+            <input class="entfernung" type="hidden" hidden value="2">
+            nicht so weit weg
+
+    </button>
+    <button class="btn">
+
+            <input class="entfernung" type="hidden" hidden value="3">
+            ganz nah dran
+
+    </button>
+    <div class="preisCont">
+        <button class="btn">
+
+                <input class="preis" type="hidden" hidden value="1">
+                Egal
+
+        </button>
+        <button class="btn">
+
+                <input class="preis" type="hidden" hidden value="2">
+                nicht zu viel
+
+        </button>
+        <button class="btn">
+
+                <input class="preis" type="hidden" hidden value="3">
+                Ende des Monats
+
+        </button>
+    </div>
+</div>
+
+<span class="headfilt">Veggietauglich </span>
+<div class="filter">
+    <button class="btn">
+
+            <input class="veggietauglich" type="hidden" hidden value="1">
+            Egal
+
+    </button>
+    <button class="btn">
+            <input class="veggietauglich" type="hidden" hidden value="2">
+            sollte schon schmecken
+
+    </button>
+    <button class="btn">
+
+            <input class="veggietauglich" type="hidden" hidden value="3">
+            muss ganz lecker sein
+
+    </button>
+</div>
+<div id="res"></div>
+<button type="submit" class="btn sub"> Zufall</button>
+<button class="btn reset"> Reset</button>
+</form>
+</body>
+<script src="script.js"></script>
+</html>
